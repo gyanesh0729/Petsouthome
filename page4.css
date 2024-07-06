@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0e0101; /* Light gray background color */
+
+}
+
+.send-pg {
+    text-align: center;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #d4a2a2; /* White background color for the container */
+    box-shadow: 0 0 10px rgba(143, 86, 86, 0.1); /* Box shadow for a subtle elevation effect */
+    max-width: 600px; /* Adjust container max-width as needed */
+
+}
+
+.home-bk {
+    text-decoration: none;
+    color: #333;
+    background: linear-gradient(to top,rgba(0,0,0,0.5)50px,rgba(0,0,0,0.5)50px),url(pets024.jpeg );
+}
+
+.cont {
+    margin-top: 20px;
+}
+
+.food {
+    margin-top: 30px;
+    color: rgb(0, 0, 0); /* Blue color for emphasis */
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4caf50; /* Green button color */
+    color: #0f0606; /* White text color */
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}

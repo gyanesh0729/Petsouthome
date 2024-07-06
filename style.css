@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.nav-main{
+  width: 100%;
+  padding: 0;
+    margin-right: 0%;
+    background: linear-gradient(to top,rgba(0, 0, 0, 0.055)50%,rgba(0, 0, 0, 0.055)50%),url(pets023.png );
+    background-position: center;
+    background-size: cover; 
+    height: 100% ;
+}
+.navbar{
+    width: 1200px;
+    float: 75px;
+    margin: auto;
+  
+}
+.brand{
+    width: 20px;
+    float: left;
+    height: 100px;
+}
+.logo{
+    color: rgb(192, 213, 210);
+    font-size: 35px;
+    font-family: Arial;
+    padding-left: 10px;
+    float: left;
+    padding-top: 10px;
+}
+.menu{
+    width: 400px;
+    float: right;
+     height: 70px;
+}
+ul{
+    float: right;
+    display: flex;
+    justify-content: right;
+    align-items: right;
+
+}
+ul,li{
+    list-style: none;
+    margin-left: 50px;
+    margin-top: 0px;
+    font-size: 14px;
+    margin-top: 10px;
+}
+ ul.li,a{
+    text-decoration: none;
+    color:#fff ;
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.2s ease-in-out;
+
+ }
+ ul,li ,a:hover{
+color: rgb(245, 157, 125);
+ }
+
+  .top-cunt{
+    width: 800px;
+    height: 500px;
+    text-decoration: none;
+    color:#030101 ;
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.2s ease-in-out;
+    padding-left: 50px;
+    padding-top:200px;
+
+
+  }
+  .top-cunt .par
+  {
+    font-family: Arial;
+    line-height: 30px;
+    font-size: 20px;
+  
+    
+  }
+  .top-cunt h1{
+    font-family: 'Times New Roman';
+    font-size: 70px;
+  }
+  .from{
+     width: 250px;
+    height: 400px;
+    background-color: rgb(66, 64, 64);
+    border: rgb(66, 64, 64);
+    border-radius: 15px;
+    position: absolute;
+    top: 25%;
+    left: 72%;
+    padding-top: 50px;
+    padding: 20px;
+
+
+  }
+  .from input{
+     width: 240px;
+     height: 35px;
+     background: transparent;
+     margin: 5px;
+     border-radius: 5px;
+  }
+  .from .login{
+    text-align: center;
+  width: 220px;
+  font-family: sans-serif;
+  color: #ff7200;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #fff;
+  border-radius: 10px;
+  margin-top: 20px;
+  font-family: sans-serif;
+  letter-spacing: 1px;
+  }
+  .from input:focus{
+    color: none;
+  }
+  ::placeholder{
+    color: rgba(255, 255, 255, 0.301); 
+    font-family: Arial;
+    margin: 2px;
+  }
+  .btnn{
+    width: 100px;
+    height: 40px;
+    background: #ff7200;
+    border: none;
+    margin-top: 30px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: rgb(7, 7, 7);
+    position: relative;
+    left: 73px;
+  }
+  .btnn:hover{
+    background: #ffffff0a;
+    color: #000000;
+
+  }
+ .link{
+    margin-top: 20px;
+    text-align: center;
+    color: #f1ede9;
+    font-size: 10px;
+  }
+  .fgt{
+    color: #f9f9f9;
+    font-size: 10px;
+  }
+  .signup{
+    position: relative;
+    left: 75px;
+  }

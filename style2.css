@@ -1,0 +1,42 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+}.about{
+    width: 100%;
+    background: linear-gradient(to top,rgba(17, 13, 13, 0.5)50%,rgba(0,0,0,0.5)50%),url(page4.jpg);
+    background-position: bottom;
+    background-size: cover; 
+    height:110vh ;
+    color: #f5f6f6;
+}
+a{
+    text-decoration: none;
+    color:#f5f6f6 ;
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.2s ease-in-out;
+    padding-left: 20px;
+}
+.cont{
+    width: 500px;
+    height: 50vh;
+    padding-left: 50px;
+}
+.home-bk{
+    padding: 10px;
+    position: relative;
+    left: 30px;
+    top: 20px;
+    text-align: center;
+    font-family: Arial;
+    font-size: 15px;
+    background: rgb(250, 190, 113);
+    border-radius: 10px;
+}
+.home-bk:hover{
+    background: #fff;
+    color: #fefafa;
+    transition: 0.2s ease-in-out;
+
+}

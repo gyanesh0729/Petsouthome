@@ -1,0 +1,187 @@
+   <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Donation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 00s;
+            padding: 00;
+            height: 100vh;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0) 100%, rgba(0, 1, 5, 1) 100%), url(3pic..webp);
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+
+        .send-pg {
+            text-align: center;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 30px;
+            border-radius: 10px;
+        }
+
+        .home-bk {
+            text-decoration: none;
+            color: #00f;
+        }
+
+        .cont {
+            margin-top: 120px;
+        }
+
+        .food {
+            margin-top: 30px;
+            color: #00f;
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.4);
+            padding-top: 60px;
+        }
+
+        .modal-content {
+            background-color: #fefefe;
+            margin: 5% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+        }
+
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .share-option {
+            margin: 10px;
+            cursor: pointer;
+            color: blue;
+            text-decoration: underline;
+        }
+
+        .join-us-button {
+            position: fixed;
+            top: 30px;
+            right: 20px;
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 1em;
+        }
+
+        .join-us-button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+
+<body>
+
+    <a href="https://chat.whatsapp.com/YourGroupInviteLink" class="join-us-button">Join Us</a>
+    <div class="send-pg">
+        <h3>
+            <a class="home-bk" href="index.html">HOME</a>
+            <div class="cont">
+                <h1>Food Donation</h1>
+                <p>After entering the details join the what's app group of our website at top corner</p>
+            </div>
+        </h3>
+        <h2 class="food">
+            Enter details
+        </h2>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+
+            <label for="fooddetails">Food Details:</label>
+            <input type="text" id="fooddetails" name="fooddetails">
+  
+          <label for="additionalInfo">Additional information:</label>
+          <input type="text" id="additionalInfo" name="additionaldetails">
+      
+          <label for="location">location:</label>
+          <input type="text" id="location" name="location">
+        <button onclick="openSharingModal()">Donate Food</button>
+        </div>
+    
+        <!-- Modal -->
+        <div id="sharingModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeSharingModal()">&times;</span>
+                <div class="share-option" onclick="shareOnWhatsApp()">Share on WhatsApp</div>
+                <div class="share-option" onclick="shareViaEmail()">Share via Email</div>
+            </div>
+        </div>
+        <script>
+            function openSharingModal() {
+                var modal = document.getElementById("sharingModal");
+                modal.style.display = "block";
+            }
+
+            function closeSharingModal() {
+                var modal = document.getElementById("sharingModal");
+                modal.style.display = "none";
+            }
+
+            function shareOnWhatsApp() {
+                closeSharingModal();
+                var groupInviteLink = 'https://chat.whatsapp.com/YourGroupInviteLink';
+                var  name= document.getElementById("name").value;
+                var  fooddetails= document.getElementById("fooddetails").value;
+                var additionalInfo = document.getElementById("additionalInfo").value;
+                var location = document.getElementById("location").value;
+                
+                var message =
+                              'food donation details:' + ' \nName:' + name + '\nFood Details: ' + fooddetails +
+                              '\nAdditional Info: ' + additionalInfo +
+                              '\nLocation: ' + location;
+                
+                var whatsappLink = 'https://api.whatsapp.com/send?text=' + encodeURIComponent(message) + '&link=' + encodeURIComponent(groupInviteLink);
+                window.open(whatsappLink, '_blank');
+            }
+
+
+            function shareViaEmail() {
+                closeSharingModal();
+                var fooddetails = document.getElementById("fooddetails").value;
+                var additionalInfo = document.getElementById("additionalInfo").value;
+                var location = document.getElementById("location").value;
+                var emailLink = 'mailto:?subject=Pet%20Food%20Donation&body=' +
+                    encodeURIComponent('food donation details:\nFood Details: ' + fooddetails +
+                        '\nAdditional Info: ' + additionalInfo +
+                        '\nLocation: ' + location);
+                var emailLink = '245121737102@mvsrec.edu.in'   + encodeURIComponent(emailLink) +     
+                window.open(emailLink, '_blank');
+            }
+        </script>
+    </div>
+</body>
+
+</html>

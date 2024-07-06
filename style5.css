@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.recive {
+  width: 100%;
+  background: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.5) 50%,
+      rgba(0, 0, 0, 0.5) 50%
+    ),
+    url(pets024.jpeg);
+  background-position: center;
+  background-size: cover;
+  height: 109vh;
+  background: linear-gradient(to top,rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%),url(pets023.png );
+}
+a {
+  text-decoration: none;
+  color: #fff;
+  font-family: Arial;
+  font-weight: bold;
+  transition: 0.2s ease-in-out;
+}
+.home {
+  padding: 10px;
+  position: relative;
+  left: 30px;
+  top: 20px;
+  font-family: Arial;
+  font-size: 15px;
+  border-radius: 10px;
+}
+.home:hover{
+    background: #fff;
+    color: #000000;
+    transition: 0.2s ease-in-out;
+
+}
